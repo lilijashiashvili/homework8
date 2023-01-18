@@ -1,97 +1,128 @@
-.container{
-    width: 1170px;
-    margin-top: 25px;
-    margin-left: 86px;
-    display: flex;
-    gap: 534px;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.myheader{
+	padding: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 ul{
-    display: flex;
-    gap: 48px;
-    
+	width: 505px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	padding-top: 10px;
 }
 
 li{
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 10px;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.fa-bars{
+	display: none;
 }
 
 .banner{
+	max-width: 1519px;
 	width: 100%;
-	height: 650px;
-	object-fit: cover;
-    margin-top: 25px;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	position: relative;
+	z-index: 5;
 }
-
-
-
-.s1-text{
+.text1{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 307px;
+    margin: 0 auto;
+	width: 100%;
 	text-align: center;
-	
-}
-.s1-text > h1{
-	font-size: 78px;
-	font-family: 'Raleway', sans-serif;
-	color: #ffffff;
-	
+	z-index: 10;
+
 }
 
-.s1-text > p{
-	font: 18px;
+.text1 > h1{
+	font-size:78px ;
+	color: #FFFFFF;
+	padding-bottom: 55px;
 	font-family: 'Raleway', sans-serif;
-	color: #ffffff;
-	margin-top: 55px;
-	
 }
 
-.container2{
-	width: 1170px;
-	margin-top: 80px;
-	margin-left: 95px;
+.text1 > h2{
+	font-size:18px ;
+	color: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+	margin: 75px 95px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    column-gap: 41px;
-
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .left-box{
-	width: 361px;
-	height: 242px;
-	
-	
+	width: 242px;
+	height: 238;
 }
 
-.left-box > h1{
+
+ .left-box > h1{
 	font-size: 15px;
+	color: #8D8D8D;
 	font-family: 'Raleway', sans-serif;
-}
+ }
 
-.left-box > h2{
+ .left-box > h2{
 	font-size: 25px;
+	color:#1A1A1B;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 13px;
-}
+	margin-bottom: 45px;
+ }
 
-.left-box > p{
+ .left-box > p{
 	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	margin-top: 45px;
-}
+	color: #8D8D8D;
+	line-height: 21px;
+ }
 
-
-.cards{
+ .cards{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
-}
-.card{
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+ }
+
+ .card{
 	width: 301px;
 	height: 327px;
 	
@@ -112,3 +143,45 @@ li{
 	padding-top: 12px;
 	font-weight: 500;
 }
+
+
+@media (max-width:768px){
+	nav{
+	 display: none;
+	}
+	
+	.fa-bars{
+	 display: inline-block;
+	}
+
+	.text1{
+		top: 100px;
+	}
+
+ }
+
+
+ 
+@media (max-width:768px){
+	nav{
+	 display: none;
+	}
+	
+	.fa-bars{
+	 display: inline-block;
+	}
+
+	.container{
+		display: block;
+		margin: 45pxpx;
+	}
+
+	.text1 > h1{
+	    font-size: 30px;
+		padding-bottom: 10px;
+	}
+
+	.left-box{
+	    padding-bottom:15px;
+	}
+ }
